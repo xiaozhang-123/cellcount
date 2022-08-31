@@ -1,0 +1,6 @@
+├─djangoProject
+│  └─urls.py # django 接口处理模块
+│  └─settings.py # django服务端配置模块
+│  └─count.py  # 识别算法处理模块
+│  └─views.py  # django http视图处理模块
+└─=manage.py  #django 启动模块

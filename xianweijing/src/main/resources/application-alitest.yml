@@ -1,0 +1,44 @@
+spring:
+  mvc:
+    async:
+      request-timeout: 10000
+  redis:
+    database: 0
+    host: 119.28.90.104
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 8 #最大连接数
+        max-wait: -1 #最大阻塞等待时间
+        max-idle: 8 #最大空闲连接
+        min-idle: 0 #最小空闲连接
+
+    connect-timeout: 5000
+    password: ****
+  servlet:
+    multipart:
+      max-request-size: 200MB
+      max-file-size: 200MB
+
+  mail:
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    username: 3499656821@qq.com
+    password: *****
+    protocol: smtp
+    port: 587
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: cellcount
+    url: jdbc:mysql://****:3306/xianweijing?useSSL=false
+  jpa:
+    show-sql: true
+server:
+  port: 8080
+logging:
+  pattern:
+    console: "%d - %msg%n"
+my:
+  address: 119.28.90.104
+
